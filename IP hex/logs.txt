@@ -1,0 +1,8 @@
+2020-12-02 23:40:30	ip-0A1021E9	company 2020-12-02 23:40:30,022 | INFO | MainProcess sqs.listener:69 | 1 message(s) have been received.
+2020-12-02 23:40:30	ip-0A1021E9	company 2020-12-02 23:40:30,023 | INFO | MainProcess sqs.listener:73 | Processing message 0 of 1.
+2020-12-02 23:40:30	ip-0A1021E9	company 2020-12-02 23:40:30,024 | INFO | MainProcess sqs.listener:88 | Handling message attempt 2
+2020-12-02 23:40:30	ip-0E0141A9	company 2020-12-02 23:40:30,024 | INFO | MainProcess consumer.handlers.base:36 | Processing file at S3 key raw_masshunter_output/2020-12/1202/20201202-WO-ORD-OOB-212/20201202-WO-ORD-OOB-212_000.d.1.zip in bucket company-intake-prod.
+2020-12-02 23:40:30	ip-0A1021E9	company 2020-12-02 23:40:30,046 | INFO | MainProcess consumer.handlers.masshunter_zip:49 | Cleaned up C:\Users\Administrator\Temp\Masshunter
+2020-12-02 23:40:30	ip-0A1021E9	company 2020-12-02 23:40:30,047 | INFO | MainProcess consumer.handlers.masshunter_zip:52 | Created C:\Users\Administrator\Temp\Masshunter
+2020-12-02 23:40:30	ip-0A1021E9	company 2020-12-02 23:40:30,519 | INFO | MainProcess consumer.handlers.zip:55 | Downloaded C:\Users\Administrator\Temp\Masshunter\20201202-WO-ORD-OOB-212_000.d.1.zip
+2020-12-02 23:40:30	ip-0A1021E9	company 2020-12-02 23:40:30,520 | INFO | MainProcess consumer.handlers.zip:37 | Unzip path: C:\Users\Administrator\Temp\Masshunter\20201202-WO-ORD-OOB-212_000.d\
