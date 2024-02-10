@@ -10,7 +10,7 @@ def store_inputs(count: int):
     return products
 
 
-def load_from_file(path):
+def load_from_file(path: str):
     """
     In case you do not want to redirect the input from a file to stdin and
     load the products from a file directly, you may use this method.
@@ -29,7 +29,7 @@ def load_from_file(path):
     return products
 
 
-def featuredProduct(products):
+def featuredProduct(products: list[str]):
     """
     Return the featured product of tomorrow.
 
