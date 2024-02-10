@@ -20,8 +20,11 @@ def load_from_file(path):
     """
     products = []
     with open(path) as file:
+        # Reading the number of products from the first line
         count = int(file.readline())
+        # Reading lines the same number of times as there are products
         for i in range(count):
+            # Stripping the \n from the end of the current line
             products.append(file.readline().strip())
     return products
 
@@ -38,6 +41,8 @@ def featuredProduct(products):
     :return: The feature popular product.
     :rtype: str
     """
+
+    # Creating a dictionary where the frequency of the products is stored
     prod_dict = {}
     for p in products:
         if p in prod_dict:
