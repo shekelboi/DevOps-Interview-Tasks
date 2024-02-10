@@ -1,5 +1,5 @@
 # Featured Products 
-An e-commerce site tracks the purchases made each day. The product that is purchased ALL the most one day is the featured product for the following day. If there is a tie for the product purchased most frequently, those product names are ordered alphabetically ascending and the last name in the list is chosen.
+An e-commerce site tracks the purchases made each day. The product that is purchased the most one day is the featured product for the following day. If there is a tie for the product purchased most frequently, those product names are ordered alphabetically ascending and the last name in the list is chosen.
 
 **Example**
 
@@ -53,6 +53,6 @@ redShirt
 
 * *greenShirt*, *bluePants*, *blackShoes*, and *whiteShirt* were each purchased 1 time.
 * *redShirt* and *redPants* were each purchased 2 times. 
-* *redShirt* is the last product listed after ordering tne products alphabetically ascending: *redPants*, *redShirt*.
+* *redShirt* is the last product listed after ordering the products alphabetically ascending: *redPants*, *redShirt*.
 * *redShirt* is the featured product for the following day. 
 
