@@ -1,0 +1,9 @@
+8
+greenShirt
+bluePants
+redShirt
+blackShoes
+redPants
+redPants
+whiteShirt
+redShirt
