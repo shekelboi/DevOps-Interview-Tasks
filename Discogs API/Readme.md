@@ -1,5 +1,7 @@
 # Discogs API
 
+Link for the API: https://api.discogs.com/artists/125246/releases
+
 ##  Task 1
 Fetch the JSON response into a data structure.
 
