@@ -6,7 +6,7 @@ occurrence of a unique character in the string using 1-based indexing.
 If the string does not contain any unique character, return -1. 
 
 ### Example
-*s="statistics'*
+*s='statistics'*
 
 The unique characters are [a, c], among which occurs first Using 1-based indexing,
 it is at index 3.
