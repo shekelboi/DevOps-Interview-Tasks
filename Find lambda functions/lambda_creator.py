@@ -6,6 +6,8 @@ import csv
 
 IAM_ROLE_NAME = 'lambda-test-role'
 ACCOUNT_ID = boto3.client('sts').get_caller_identity()['Account']
+REGIONS = ['us-east-2', 'us-west-1', 'us-west-2']
+FUNCTIONS_PER_REGION = 5
 
 
 def random_name(length=10):
@@ -36,26 +38,22 @@ except iam_client.exceptions.EntityAlreadyExistsException:
     response = iam_client.get_role(RoleName=IAM_ROLE_NAME)
 
 role_arn = response['Role']['Arn']
-regions = ['us-east-2', 'us-west-1', 'us-west-2']
-functions_per_region = 5
-
-clients = [boto3.client('lambda', region_name=region) for region in regions]
+clients = [boto3.client('lambda', region_name=region) for region in REGIONS]
 
 functions_created = []
 fake_functions = []
 
-total = functions_per_region * len(regions)
+total = FUNCTIONS_PER_REGION * len(REGIONS)
 count = 0
 
 for client in clients:
     # Adding fake functions
     fake_functions.extend(
         [(f'arn:aws:lambda:{client.meta.region_name}:{ACCOUNT_ID}:function:{random_name()}', client.meta.region_name)
-         for i in
-         range(50)])
+         for i in range(FUNCTIONS_PER_REGION * 10)])
 
     res = client.list_functions()
-    for i in range(functions_per_region):
+    for i in range(FUNCTIONS_PER_REGION):
         result = client.create_function(FunctionName=random_name(),
                                         Role=f'{role_arn}',
                                         Code={'ZipFile': open('empty.zip', 'rb').read()},
