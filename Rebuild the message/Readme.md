@@ -5,7 +5,7 @@ Your task is to rebuild a message that was cut into pieces.
 Implement the function `rebuild_message(parts)` which receives
 a list of strings as a parameter.
 
-Each part I was cut off from the same message. You have to reconstitute this 
+Each part was cut off from the same message. You have to reconstitute this 
 original message, based on the following rules:
 
 * the message always starts with the character *A* and ends with the character *Z*
