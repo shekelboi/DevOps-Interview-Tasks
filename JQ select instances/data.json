@@ -1,0 +1,44 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "InstanceId": "i-313e179acbb349cbb",
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "first_instance"
+                        },
+                        {
+                            "Key": "Env",
+                            "Value": "dev"
+                        }
+                    ]
+                },
+                {
+                    "InstanceId": "i-fd3ce78c14cb49a2b",
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "second_instance"
+                        },
+                        {
+                            "Key": "Env",
+                            "Value": "dev"
+                        }
+                    ]
+                },
+                {
+                    "InstanceId": "i-0f1521113e9e41fa8",
+                    "Tags": [
+                        {
+                            "Key": "Env",
+                            "Value": "prod"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
